@@ -1,0 +1,333 @@
+/* General Styles */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    color: #333;
+    text-align: center;
+}
+:root {
+    --background: #ffffff;
+    --text: #333;
+    --accent: #FF6EC7;
+    --accent-dark: #9D50BB;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, #FF6EC7, #9D50BB);
+    color: white;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Navbar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* About Me Section */
+#about {
+    background: var(--background);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    color: var(--text);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* About Content Layout */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 40px;
+}
+
+/* Profile Image */
+.about-image img {
+    width: 250px; /* More oval */
+    height: 340px; /* Keep height the same */
+    border-radius: 50%; /* Ensures smooth edges */
+    object-fit: cover;
+    border: 5px solid var(--accent);
+}
+
+/* About Text */
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h3 {
+    font-size: 1.8rem;
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: var(--text);
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Resume Button */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--accent-dark);
+}
+
+/* Projects Section */
+#projects {
+    background: #f8f9fa; /* Light background */
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Grid Layout */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* Project Card */
+.project-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #FF6EC7 0%, #9D50BB 100%);
+    color: white;
+}
+.project-card h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #9D50BB;
+    transition: color 0.3s ease;
+}
+
+.project-info:hover h3 {
+    color: white;
+}
+
+/* Project Image */
+.project-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Project Info */
+.project-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.project-info h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Project Button */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #FF6EC7;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #9D50BB;
+}
+
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+    background: #f1f1f1;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    color: #FF6EC7;
+}
+
+#contact p a {
+    color: #FF6EC7;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact p a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+/* Skills Section */
+#skills {
+    background: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Skill Categories */
+.skill-category {
+    margin-bottom: 40px;
+}
+
+.skill-category h3 {
+    font-size: 1.8rem;
+    color: #FF6EC7;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Skill Box */
+.skill {
+    background: #f9f9f9;
+    padding: 20px;
+    width: 180px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.skill:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(135deg, #FF6EC7 0%, #9D50BB 100%);
+    color: white;
+}
+
+/* Skill Icons */
+.skill i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #9D50BB;
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect for Icons */
+.skill:hover i {
+    color: white;
+}
+
+/* Skill Text */
+.skill span {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill {
+        width: 80%;
+    }
+}
