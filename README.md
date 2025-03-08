@@ -26,5 +26,5 @@ portfolio-website/
 Setup & Installation
 
 1.Clone the repository: 
-git clone https://github.com/sowmya543/portfolio-website.git
+git clone (https://sowmya543.github.io/portfolio/)
 2.Open index.html in a browser or use Live Server in VS Code.
